@@ -13,7 +13,9 @@ public class Weapon : SerializedScriptableObject
 
     public float weaponDamage;
     public float weaponFireRate;
-    public float weaponFireRange;
+    public float weaponBulletSpeed;
+    public int weaponAmmoCapacity;
+    public float weaponReloadSpeed;
     public string weaponDescription;
     public GameObject weaponModel;
     public GameObject bullet;

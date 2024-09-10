@@ -6,22 +6,93 @@ public class Player : MonoBehaviour
 {
     public static Player Instance;
 
-    public float maxHealth;
-    public float healthRegeneration;
+    [Header("Upgrade Variables")]
+    public int maxHealth;
+    public int healthRegeneration;
 
-    public float movementSpeed;
+    public int movementSpeed;
 
-    public float damage;
-    public float fireRate;
-    public float fireRange;
+    public int damage;
+    public int fireRate;
+    public int bulletSpeed;
+    public int reloadSpeed;
+    public int ammoCapacity;
 
-    public float xpMultiplier;
-    public float goldMultiplier;
+    public int xpMultiplier;
+    public int goldMultiplier;
 
-    
+
+    [Header("Ingame Variables")]
+    public float currentHealth;
+    public float currentXP;
+    public float currentGold;
+    public float xpToLevelUp;
     private void Awake()
     {
         if (Instance == null) { Instance = this; }
         else { Destroy(gameObject); }
     }
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+    }
+    public void IncreaseXP(float amount)
+    {
+        currentXP += amount * CalculateXPMultiplier();
+        if(currentXP >= xpToLevelUp)
+        {
+            PerkManager.Instance.ShowPerk();
+            currentXP = 0;
+            xpToLevelUp += 5;
+        }
+    }
+    public void IncreaseGold(float amount)
+    {
+        currentGold += amount * CalculateGoldMultiplier();
+    }
+    #region Calculations
+    public float CalculateDamage()
+    {
+        return PlayerShoot.Instance.weapon.weaponDamage + damage * 3;
+    }
+    public float CalculateFireRate()
+    {
+        return PlayerShoot.Instance.weapon.weaponFireRate + fireRate * 3;
+    }
+    public float CalculateBulletSpeed()
+    {
+        return PlayerShoot.Instance.weapon.weaponBulletSpeed + bulletSpeed * 10;
+    }
+    public float CalculateMaxHealth()
+    {
+        return 100 + maxHealth * 20;
+    }
+    public float CalculateHealthRegeneration()
+    {
+        return 1 + healthRegeneration;
+    }
+    public float CalculateMovementSpeed()
+    {
+        return 5 + movementSpeed;
+    }
+    public int CalculateAmmoCapacity()
+    {
+        return PlayerShoot.Instance.weapon.weaponAmmoCapacity + ammoCapacity * 2;
+    }
+    public float CalculateReloadSpeed()
+    {
+        float baseReloadTime = PlayerShoot.Instance.weapon.weaponReloadSpeed;
+        float modifier = reloadSpeed * 0.1f;
+
+        return Mathf.Max(0.5f, baseReloadTime / (1 + modifier));
+    }
+    public float CalculateXPMultiplier()
+    {
+        return 1 + xpMultiplier / 5;
+    }
+    public float CalculateGoldMultiplier()
+    {
+        return 1 + goldMultiplier / 5;
+    }
+    #endregion
 }

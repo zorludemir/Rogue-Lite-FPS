@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4921fedcedeefc447914dd0abb737055, type: 3}
   m_Name: XPMultiplier
   m_EditorClassIdentifier: 
-  perkID: 7
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  perkID: 9
   perkName: XP Multiplier
   perkIcon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  perkLevel: 0
   perkDescription: Increases gain xp amount
+  type: 0

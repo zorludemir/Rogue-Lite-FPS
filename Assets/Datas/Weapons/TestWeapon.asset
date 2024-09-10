@@ -24,9 +24,11 @@ MonoBehaviour:
   weaponID: 0
   weaponName: Test Weapon
   weaponIcon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  weaponDamage: 0
-  weaponFireRate: 0
-  weaponFireRange: 0
+  weaponDamage: 5
+  weaponFireRate: 1
+  weaponBulletSpeed: 50
+  weaponAmmoCapacity: 5
+  weaponReloadSpeed: 1
   weaponDescription: 
-  weaponModel: {fileID: 0}
-  bullet: {fileID: 0}
+  weaponModel: {fileID: 6629916815550521844, guid: 5a4692c4c9528e2459223386ed2640df, type: 3}
+  bullet: {fileID: 6422526127843707678, guid: 3b9e5ad0c65c0554bbde3ebf8de8f0d8, type: 3}

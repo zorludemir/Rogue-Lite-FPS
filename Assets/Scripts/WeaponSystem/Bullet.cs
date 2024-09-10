@@ -1,18 +1,21 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public virtual void Launch(Vector3 direction, float speed)
     {
-        
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.velocity = direction * speed;
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.transform.CompareTag("Enemy"))
+        {
+            collision.transform.GetComponent<Enemy>().TakeDamage(Player.Instance.CalculateDamage());
+        }
+        Destroy(gameObject);
     }
 }

@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        moveSpeed = Player.Instance.CalculateMovementSpeed();
     }
 
     void Update()
@@ -39,11 +40,11 @@ public class PlayerMovement : MonoBehaviour
         
         if (Input.GetKey(KeyCode.LeftShift)  && !isSprint) 
         {
-            moveSpeed = 10f;
+            moveSpeed = Player.Instance.CalculateMovementSpeed() * 2;
         }
         else
         {
-            moveSpeed = 5f;
+            moveSpeed = Player.Instance.CalculateMovementSpeed();
         }
         if(Input.GetKeyUp(KeyCode.LeftShift) && isSprint)
         {

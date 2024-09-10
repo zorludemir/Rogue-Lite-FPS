@@ -23,10 +23,12 @@ public class PerkManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void Start()
     {
         perkPanelObject.SetActive(false);
     }
+
     public void ShowPerk()
     {
         perkPanelObject.SetActive(true);
@@ -47,10 +49,15 @@ public class PerkManager : MonoBehaviour
             perkChoice.perk = randomPerk;
             perkChoice.Setup(activePerks.ContainsKey(randomPerk) ? activePerks[randomPerk] : 0);
         }
+        CameraLook.ChangeCursorLockState(false);
+        Time.timeScale = 0;
     }
 
     public void SelectPerk(Perk perk)
     {
+        CameraLook.ChangeCursorLockState(true);
+        Time.timeScale = 1;
+
         if (activePerks.ContainsKey(perk))
         {
             if (activePerks[perk] < 5)
@@ -62,6 +69,50 @@ public class PerkManager : MonoBehaviour
         {
             activePerks[perk] = 1;
         }
+
+        ApplyPerkEffect(perk);
+
         perkPanelObject.SetActive(false);
+    }
+
+    private void ApplyPerkEffect(Perk perk)
+    {
+        switch (perk.perkID)
+        {
+            case 0:
+                Player.Instance.bulletSpeed++;
+                break;
+            case 1:
+                Player.Instance.damage++;
+                break;
+            case 2:
+                Player.Instance.fireRate++;
+                break;
+            case 3:
+                Player.Instance.goldMultiplier++;
+                break;
+            case 4:
+                Player.Instance.healthRegeneration++;
+                break;
+            case 5:
+                Player.Instance.maxHealth++;
+                break;
+            case 6:
+                Player.Instance.movementSpeed++;
+                break;
+            case 7:
+                Player.Instance.reloadSpeed++;
+                break;
+            case 8:
+                Player.Instance.ammoCapacity++;
+                break;
+            case 9:
+                Player.Instance.xpMultiplier++;
+                break;
+            
+            default:
+                Debug.LogWarning("Unknown perk: " + perk.perkName);
+                break;
+        }
     }
 }

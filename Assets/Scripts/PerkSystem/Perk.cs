@@ -11,4 +11,13 @@ public class Perk : SerializedScriptableObject
     public Sprite perkIcon;
 
     public string perkDescription;
+
+    public enum Type
+    {
+        Upgrade,
+        Skill,
+        Passive,
+    }
+    public Type type;
+
 }

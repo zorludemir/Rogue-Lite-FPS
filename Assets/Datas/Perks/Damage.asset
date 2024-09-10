@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4921fedcedeefc447914dd0abb737055, type: 3}
   m_Name: Damage
   m_EditorClassIdentifier: 
-  perkID: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  perkID: 1
   perkName: Damage
   perkIcon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  perkLevel: 0
   perkDescription: Increases weapon damage
+  type: 0

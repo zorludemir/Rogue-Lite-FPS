@@ -11,12 +11,14 @@ public class PerkChoice : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI levelText;
+    public Image background;
     public Button perkButton;
 
     private void Awake()
     {
         perkButton = GetComponent<Button>();
         perkButton.onClick.AddListener(OnPerkSelected);
+        background = GetComponent<Image>();
     }
 
     public void Setup(int perkLevel)
@@ -25,6 +27,12 @@ public class PerkChoice : MonoBehaviour
         nameText.text = perk.perkName;
         descriptionText.text = perk.perkDescription;
         levelText.text = "Level " + perkLevel;
+        switch (perk.type)
+        {
+            case Perk.Type.Skill: background.color = Color.red; break;
+            case Perk.Type.Upgrade: background.color = Color.white; break;
+            case Perk.Type.Passive: background.color = Color.green; break;
+        }
     }
 
     private void OnPerkSelected()
