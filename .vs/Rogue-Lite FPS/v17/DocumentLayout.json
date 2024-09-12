@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\enemysystem\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemysystem\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|e:\\zorludemir game studio\\projects\\rogue-lite fps\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\perksystem\\perkchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\perksystem\\perkchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\weaponsystem\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weaponsystem\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\tourmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tourmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\enemysystem\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemysystem\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|e:\\zorludemir game studio\\projects\\rogue-lite fps\\assets\\scripts\\tourmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tourmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\perksystem\\perkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\perksystem\\perkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\enemysystem\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemysystem\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\assets\\scripts\\perksystem\\perk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{197C56F9-A650-F59C-AD95-A8807D318266}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\perksystem\\perk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +50,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TourManager.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\TourManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TourManager.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\TourManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TourManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwB8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T19:22:51.469Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UIManager.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\UIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\UIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAACQAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T19:22:16.288Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemySpawner.cs",
-              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
-              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Title": "MainMenuManager.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAADEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T18:37:34.305Z",
+              "WhenOpened": "2024-09-11T21:45:12.598Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PerkChoice.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\PerkChoice.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PerkSystem\\PerkChoice.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\PerkChoice.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PerkSystem\\PerkChoice.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAABQwCAAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T01:54:56.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerShoot.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\WeaponSystem\\PlayerShoot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponSystem\\PlayerShoot.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\WeaponSystem\\PlayerShoot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponSystem\\PlayerShoot.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAAAFAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T01:20:03.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PerkManager.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\PerkManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PerkSystem\\PerkManager.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\PerkManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PerkSystem\\PerkManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T01:01:17.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Perk.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\Perk.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PerkSystem\\Perk.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\PerkSystem\\Perk.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PerkSystem\\Perk.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T00:37:10.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Player.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T21:51:25.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TourManager.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\TourManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TourManager.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\TourManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TourManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:22:51.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAADQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:22:16.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
+              "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySystem\\EnemySpawner.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T18:37:34.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Enemy.cs",
               "DocumentMoniker": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySystem\\Enemy.cs",
               "ToolTip": "E:\\Zorludemir Game Studio\\Projects\\Rogue-Lite FPS\\Assets\\Scripts\\EnemySystem\\Enemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemySystem\\Enemy.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwGQAAAAAAAAA",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAAABwAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T15:59:48.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-10T15:59:48.854Z"
             }
           ]
         }

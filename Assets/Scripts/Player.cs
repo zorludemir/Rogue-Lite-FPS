@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     public int xpMultiplier;
     public int goldMultiplier;
 
+    [Header("Passive Variables")]
+    public int lifeSteal;
+    public int ignite;
 
     [Header("Ingame Variables")]
     public float currentHealth;
@@ -31,6 +34,11 @@ public class Player : MonoBehaviour
     {
         if (Instance == null) { Instance = this; }
         else { Destroy(gameObject); }
+        currentHealth = CalculateMaxHealth();
+    }
+    private void Start()
+    {
+        StartCoroutine(RegenerateHealth());
     }
     public void TakeDamage(float damage)
     {
@@ -39,16 +47,28 @@ public class Player : MonoBehaviour
     public void IncreaseXP(float amount)
     {
         currentXP += amount * CalculateXPMultiplier();
-        if(currentXP >= xpToLevelUp)
+        if (currentXP >= xpToLevelUp)
         {
             PerkManager.Instance.ShowPerk();
-            currentXP = 0;
-            xpToLevelUp += 5;
+            currentXP -= xpToLevelUp;
+            xpToLevelUp += 15;
+            UIManager.Instance.UpdateXPIndicator();
         }
+        UIManager.Instance.UpdateXPIndicator();
     }
     public void IncreaseGold(float amount)
     {
         currentGold += amount * CalculateGoldMultiplier();
+    }
+    public IEnumerator RegenerateHealth()
+    {
+        while (true)
+        {
+            currentHealth += CalculateHealthRegeneration();
+            if (currentHealth >= CalculateMaxHealth()) { currentHealth = CalculateMaxHealth(); }
+            UIManager.Instance.UpdateHealthIndicator();
+            yield return new WaitForSeconds(1);
+        }
     }
     #region Calculations
     public float CalculateDamage()
@@ -88,11 +108,11 @@ public class Player : MonoBehaviour
     }
     public float CalculateXPMultiplier()
     {
-        return 1 + xpMultiplier / 5;
+        return 1f + xpMultiplier / 5f;
     }
     public float CalculateGoldMultiplier()
     {
-        return 1 + goldMultiplier / 5;
+        return 1f + goldMultiplier / 5f;
     }
     #endregion
 }

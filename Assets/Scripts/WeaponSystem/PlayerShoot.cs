@@ -63,8 +63,8 @@ public class PlayerShoot : MonoBehaviour
             return;
 
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bullet.GetComponent<Bullet>().Launch(playerCamera.transform.forward, Player.Instance.CalculateBulletSpeed());
-
+        bullet.GetComponent<Rigidbody>().velocity = 
+            playerCamera.transform.forward * Player.Instance.CalculateBulletSpeed();
         currentAmmo--;
         UIManager.Instance.UpdateAmmoIndicator(false);
     }
@@ -73,13 +73,11 @@ public class PlayerShoot : MonoBehaviour
     {
         UIManager.Instance.UpdateAmmoIndicator(true);
         isReloading = true;
-        Debug.Log("Reloading...");
 
         yield return new WaitForSeconds(Player.Instance.CalculateReloadSpeed());
 
         currentAmmo = Player.Instance.CalculateAmmoCapacity();
         UIManager.Instance.UpdateAmmoIndicator(false);
         isReloading = false;
-        Debug.Log("Reloaded.");
     }
 }

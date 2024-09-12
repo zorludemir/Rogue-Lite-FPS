@@ -10,8 +10,10 @@ public class Perk : SerializedScriptableObject
     [PreviewField(height: 60), HideLabel]
     public Sprite perkIcon;
 
+    [LabelWidth(100)]
     public string perkDescription;
-
+    public bool isUpgraded;
+    public int needToUpgradePerkID;
     public enum Type
     {
         Upgrade,

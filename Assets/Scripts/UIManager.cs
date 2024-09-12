@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI ammoIndicator;
     public TextMeshProUGUI timeIndicator;
+
+    public Image xpIndicator;
+    public Image healthIndicator;
     private void Awake()
     {
         if (Instance == null)
@@ -20,6 +24,11 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Start()
+    {
+        UpdateXPIndicator();
+        UpdateHealthIndicator();
     }
     public void UpdateAmmoIndicator(bool isReloading)
     {
@@ -38,5 +47,17 @@ public class UIManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(time % 60);
 
         timeIndicator.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    public void UpdateHealthIndicator()
+    {
+        healthIndicator.fillAmount = 
+            Player.Instance.currentHealth / Player.Instance.CalculateMaxHealth();
+    }
+    public void UpdateXPIndicator()
+    {
+        float xp = Player.Instance.currentXP;
+        float maxxp = Player.Instance.xpToLevelUp;
+
+        xpIndicator.fillAmount = xp/maxxp;
     }
 }

@@ -5,11 +5,12 @@ public class Enemy : MonoBehaviour
 {
     public float health = 100f;
     public float damage = 10f;
-    public float attackRange = 2f;
     public float moveSpeed = 3f;
     public float rotationSpeed = 5f;
     public GameObject xpObject;
     private bool canAttack;
+    private bool isBurning;
+    private int burnCount;
     private Transform target;
 
     private Renderer enemyRenderer;
@@ -24,6 +25,7 @@ public class Enemy : MonoBehaviour
         {
             originalColor = enemyRenderer.material.color;
         }
+        canAttack = true;
     }
 
     private void FixedUpdate()
@@ -43,13 +45,33 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(float amount)
     {
         health -= amount;
-        StopAllCoroutines();
+        StopCoroutine(BlinkOnDamage());
         StartCoroutine(BlinkOnDamage());
 
         if (health <= 0)
         {
             Die();
         }
+
+        if (Player.Instance.ignite > 0 && !isBurning)
+        {
+            StartCoroutine(GetIgnited());
+        }
+    }
+
+    private IEnumerator GetIgnited()
+    {
+        isBurning = true;
+        burnCount = 0;
+
+        while (burnCount < 5)
+        {
+            burnCount++;
+            TakeDamage(Player.Instance.ignite);
+            yield return new WaitForSeconds(1);
+        }
+
+        isBurning = false;
     }
 
     private IEnumerator BlinkOnDamage()
@@ -72,6 +94,11 @@ public class Enemy : MonoBehaviour
         if (collision.transform.CompareTag("Player"))
         {
             Attack();
+        }
+        if (collision.transform.CompareTag("Bullet"))
+        {
+            TakeDamage(Player.Instance.CalculateDamage());
+            Destroy(collision.gameObject);
         }
     }
 

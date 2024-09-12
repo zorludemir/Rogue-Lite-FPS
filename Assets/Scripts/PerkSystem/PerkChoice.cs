@@ -30,7 +30,7 @@ public class PerkChoice : MonoBehaviour
         switch (perk.type)
         {
             case Perk.Type.Skill: background.color = Color.red; break;
-            case Perk.Type.Upgrade: background.color = Color.white; break;
+            case Perk.Type.Upgrade: background.color = Color.cyan; break;
             case Perk.Type.Passive: background.color = Color.green; break;
         }
     }

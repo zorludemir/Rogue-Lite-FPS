@@ -109,7 +109,12 @@ public class PerkManager : MonoBehaviour
             case 9:
                 Player.Instance.xpMultiplier++;
                 break;
-            
+            case 10:
+                Player.Instance.lifeSteal++;
+                break;
+            case 11:
+                Player.Instance.ignite++;
+                break;
             default:
                 Debug.LogWarning("Unknown perk: " + perk.perkName);
                 break;
